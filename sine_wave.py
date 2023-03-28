@@ -54,14 +54,17 @@ class SineWave:
     def set_freq(self, freq: float) -> None:
         """Sets the frequency of a SineWave object"""
         self.freq = freq
+        self._generate_()
 
     def set_duration(self, duration: float) -> None:
         """Sets the duration of a SineWave object"""
         self.duration = duration
+        self._generate_()
 
     def set_sample_rate(self, sample_rate: int) -> None:
         """Sets the sample rate of a SineWave object"""
         self.sample_rate = sample_rate
+        self._generate_()
 
     def get_freq(self) -> int:
         """Gets the frequency of a SineWave object"""
