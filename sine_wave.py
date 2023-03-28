@@ -24,11 +24,13 @@ class SineWave:
 
     def __repr__(self) -> str:
         """Returns the string representation of a SineWave object"""
-        return "Sine Wave: {} hertz, {} seconds, {} sample rate.".format(self.freq, self.duration, self.sample_rate)
+        return "Sine Wave: {} hertz, {} seconds, {} sample rate.".format(
+            self.freq, self.duration, self.sample_rate)
 
     def _generate_(self) -> None:
         """Generates a sine wave and returns its coordinate values"""
-        x = np.linspace(0, self.duration, self.sample_rate * self.duration, endpoint=False)
+        x = np.linspace(0, self.duration, self.sample_rate * self.duration,
+                        endpoint=False)
         frequencies = x * self.freq * self.inversion_factor
         y = np.sin((2 * np.pi) * frequencies + self.phase_shift)
 
@@ -50,6 +52,14 @@ class SineWave:
         """Shifts the phase of a SineWave object by the given factor"""
         self.phase_shift += factor
         self._generate_()
+
+    def is_inverted(self) -> bool:
+        """Returns true if a SineWave object is rotated about the y-axis"""
+        return self.inversion_factor == -1
+
+    def is_shifted(self) -> bool:
+        """Returns true if a SineWave object is shifted along the x-axis"""
+        return self.phase_shift % 2*np.pi != 0
 
     def set_freq(self, freq: float) -> None:
         """Sets the frequency of a SineWave object"""
