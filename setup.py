@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'SinusoidalWaves',
   packages = ['SinusoidalWaves'],
-  version = '0.1',
+  version = '0.2',
   license='MIT',
   description = 'Contains Sine and Cosine classes for generating and transforming sinusoidal waves.',
   author = 'Tyler Burgee',
   author_email = 'tylerburgee@gmail.com',
   url = 'https://github.com/TylerBurgee/SinusoidalWaves',
-  download_url = 'https://github.com/TylerBurgee/SinusoidalWaves/archive/refs/tags/v_0.1.tar.gz',
+  download_url = 'https://github.com/TylerBurgee/SinusoidalWaves/archive/refs/tags/v_0.2.tar.gz',
   keywords = ['waves', 'sine', 'cosine', 'transformation', 'signal', 'processing'],
   install_requires=[
           'numpy',
