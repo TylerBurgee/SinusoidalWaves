@@ -4,7 +4,7 @@ Last Modification Date: 29 March 2023
 """
 
 # IMPORT MODULES
-from AbstractWave import Wave
+from SinusoidalWaves.AbstractWave import Wave
 import numpy as np
 
 class Cosine (Wave):
