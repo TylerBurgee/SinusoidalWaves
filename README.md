@@ -10,8 +10,8 @@ pip install SinusoidalWaves
 ## Usage
 ```python
 # IMPORT MODULE
-from SinusoidalWaves.SineWave import Sine
-from SinusoidalWaves.CosineWave import Cosine
+from SinusoidalWaves import Sine
+from SinusoidalWaves import Cosine
 
 # INITIALIZE WAVES WITH A GIVEN FREQUENCY
 frequency = 5
