@@ -28,8 +28,8 @@ sine.graph()
 #cosine.graph()
 ```
 
-## Future Work
-I plan to create a signal processing class that can mix and save sinusoidal waves, as well as compute a Fast Fourier Transform on complex waves.
+## Future Update
+I am creating __add__() and __sub__() methods for the Wave class, enabling the generation of complex waves.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
