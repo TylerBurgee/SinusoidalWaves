@@ -29,7 +29,7 @@ sine.graph()
 ```
 
 ## Future Update
-I am creating __add__() and __sub__() methods for the Wave class, enabling the generation of complex waves.
+I am creating \_\_add__() and \_\_sub__() methods for the Wave class, enabling the generation of complex waves.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
