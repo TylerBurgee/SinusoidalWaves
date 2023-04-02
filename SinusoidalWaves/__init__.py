@@ -1,2 +1,2 @@
-from SinusoidalWaves.SineWave import Sine
-from SinusoidalWaves.CosineWave import Cosine
+from SinusoidalWaves.Waves import Sine
+from SinusoidalWaves.Waves import Cosine
