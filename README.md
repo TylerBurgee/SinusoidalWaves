@@ -17,9 +17,10 @@ frequency = 5
 sine = Sine(frequency)
 cosine = Cosine(frequency)
 
-# ROTATE SINE WAVE 180° ABOUT THE Y-AXIS
+# ROTATE WAVE 180° ABOUT THE Y-AXIS
 sine.invert_amplitude()
-# SHIFT COSINE WAVE 180° ALONG THE X-AXIS
+
+# SHIFT WAVE 180° ALONG THE X-AXIS
 cosine.shift_phase(3.14)
 
 # SAVE WAVE TO FILE
@@ -29,7 +30,7 @@ cosine.save(filename)
 # MULTIPLY WAVE AMPLITUDE BY A GIVEN FACTOR
 sine.mult_amplitude(0.5)
 
-# GRAPH WAVES
+# GRAPH WAVE
 sine.graph()
 ```
 
