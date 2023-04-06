@@ -9,9 +9,8 @@ pip install SinusoidalWaves
 
 ## Usage
 ```python
-# IMPORT MODULE
-from SinusoidalWaves import Sine
-from SinusoidalWaves import Cosine
+# IMPORT MODULES
+from SinusoidalWaves import Sine, Cosine
 
 # INITIALIZE WAVES WITH A GIVEN FREQUENCY
 frequency = 5
@@ -23,13 +22,16 @@ sine.invert_amplitude()
 # SHIFT COSINE WAVE 180° ALONG THE X-AXIS
 cosine.shift_phase(3.14)
 
+# SAVE WAVE TO FILE
+filename = 'cosine.wav'
+cosine.save(filename)
+
+# MULTIPLY WAVE AMPLITUDE BY A GIVEN FACTOR
+sine.mult_amplitude(0.5)
+
 # GRAPH WAVES
 sine.graph()
-#cosine.graph()
 ```
-
-## Future Update
-I am creating \_\_add__() and \_\_sub__() methods for the Wave class, enabling the generation of complex waves.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
